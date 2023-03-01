@@ -30,7 +30,7 @@ function fetch() {
 
     // 获取当前文档名
     var title = document.getElementsByClassName("posCatalog_active")[0].innerText;
-    title = title.replace("_已完成", "")
+    title = title.replace("\n已完成", "")
     var md = `# ${title}`
 
     // 枚举图片链接
